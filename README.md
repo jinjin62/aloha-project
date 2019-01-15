@@ -1,5 +1,5 @@
 # Aloha project
-This is a project to showcase HTML and CSS to build a responive website as part of the Web Development Program at RED Academy.
+A static single page responive site, displaying items on sale at Aloha Apparel. HTML used to structure the site, CSS used to style.
 
 ## Skills learned
 - HTML
