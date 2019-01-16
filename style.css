@@ -261,19 +261,46 @@ h1 {
     font-style: italic;
     text-align: center;
     background-image: url(images/wave-bkgd.jpg); 
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: 100%, 100%;
     background-repeat: no-repeat;
+    background-position-y: 90px;
     position: static;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2em;
+    padding: 2em 2em;
     height: 350px;
     margin-top: 6px;
     margin-bottom: 6px;
     border: 0px;
+}
+
+.text-submit {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 15px;
+    width: 25em;
+    height: 2em;
+}
+
+.text {
+    width: 80%;
+    height: 20px;
+    border-radius: 15px;
+    margin: 2px;
+    border: none;
+    padding: 5px;
+}
+
+.submit {
+    border-radius: 15px;
+    margin: 4px;
+    width: 100px;
+    color: white;
+    background-color: #e2574c;
 }
 
 /* footer and social media */
@@ -326,5 +353,3 @@ a:link {
 a: hover {
     
 }
-
-
