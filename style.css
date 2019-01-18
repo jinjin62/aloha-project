@@ -286,7 +286,7 @@
     /* order: 1; to shift in down for mobile */
   }
 
-  #nav-list li a {
+  .nav-list li a {
     color: #e2574c;
   }
 
@@ -416,6 +416,10 @@
 
   /* featured carousel */
 
+  .featured {
+    margin-bottom: 200px;
+  }
+
   /* newsletter and email */
 
   .newsletter {
@@ -426,13 +430,14 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       url(images/wave-bkgd.jpg);
     background-repeat: no-repeat, no-repeat;
-    background-position: bottom;
-    background-size: cover;
+    background-position: bottom, bottom;
+    background-size: cover, contain;
     min-height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px auto;
+    margin-top: 100px;
     flex-direction: column;
   }
 
@@ -441,8 +446,8 @@
     flex-direction: row;
     background-color: white;
     border-radius: 15px;
-    width: 25em;
-    height: 2em;
+    min-width: 30%;
+    height: 10%;
   }
 
   .text {
@@ -555,9 +560,14 @@
     margin-top: 20%;
   }
 
-  .contact-info {
+  .newsletter {
     display: flex;
     flex-direction: column;
-    
+    padding: 10px;
+  }
+
+  .site-footer {
+    display: flex;
+    flex-direction: column;
   }
 }

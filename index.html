@@ -10,6 +10,10 @@
     />
     <link
       rel="stylesheet"
+      href="flickity.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
       integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
       crossorigin="anonymous"
@@ -28,7 +32,7 @@
       <nav class="main-navi">
         <ul class="nav-list">
           <li><a href="#about">About</a></li>
-          <li><a href="#poducts">Products</a></li>
+          <li><a href="#products">Products</a></li>
           <li><a href="#featured">Featured</a></li>
           <li><a href="#newsletter">Updates</a></li>
         </ul>
@@ -45,15 +49,15 @@
         <h1 id="season">Spring/Summer 2016</h1>
       </div>
     </section>
-    <section class="about">
-      <h2>Hand-Crafted Styles</h2>
+    <section class="about" id="about" >
+      <span>Hand-Crafted&nbsp</span><span>Styles</span>
       <p>
         Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse
         our current selection of products or sign-up for updates below
       </p>
     </section>
     <!--Product blocks-->
-    <section class="products">
+    <section class="products" id="products">
       <div class="product-block-top">
         <div class="mens-block"><p>MEN'S</p></div>
         <div class="trends-glasses-block">
@@ -71,19 +75,19 @@
     </section>
 
     <!--Carousel-->
-    <section class="featured">
-      <div class="container">
+    <section class="featured container" id="featured">
+      <div>
         <p><i>Most-Loved</i> <strong>Products</strong></p>
       </div>
+    <div class="main-carousel">
       <div>
         <img
           src="images/checked-stretch-dress.jpg"
           alt="Checked Stretch Dress"
         />
-        <p>
-          DRESSES<br /><span class="orange-container"
-            >Checked Stretch Dress</span
-          ><br />$129.00
+        <p>DRESSES</p>
+        <h3>Checked Stretch Dress</h3>
+        <p>$129.00</p>
         </p>
       </div>
       <div>
@@ -91,28 +95,50 @@
           src="images/blue-hipster-backpack.jpg"
           alt="Blue Hipster Backpack"
         />
-        <p>
-          BAGS<br /><span class="orange-container">Blue Hipster Backack</span
-          ><br />$69.00
-        </p>
+        <p>DRESSES</p>
+        <h3>Checked Stretch Dress</h3>
+        <p>$129.00</p>
       </div>
       <div>
         <img src="images/demin-overall-shorts.jpg" alt="demin Overall Shorts" />
-        <p>
-          DEMIN<br /><span class="orange-container">Demin Overall Shorts</span
-          ><br />$89.00
-        </p>
+        <p>DRESSES</p>
+        <h3>Checked Stretch Dress</h3>
+        <p>$129.00</p>
       </div>
       <div>
         <img src="images/pink-dotted-dress.jpg" alt="Pink Dotted Dress" />
-        <p>
-          DRESSES<br /><span class="orange-container">Pink Dotted Dress</span
-          ><br />$99.00
-        </p>
+        <p>DRESSES</p>
+        <h3>Checked Stretch Dress</h3>
+        <p>$129.00</p>
       </div>
+      <div>
+        <img src="images/cotton-blue-shirt.jpg" alt="Cotton Blue Shirt" />
+        <p>DRESSES</p>
+        <h3>Checked Stretch Dress</h3>
+        <p>$129.00</p>
+      </div>
+      <div>
+        <img src="images/cotton-yellow-tshirt.jpg">
+        <p>DRESSES</p>
+        <h3>Checked Stretch Dress</h3>
+        <p>$129.00</p>
+      </div>
+      <div>
+        <img>
+        <p>DRESSES</p>
+        <h3>Checked Stretch Dress</h3>
+        <p>$129.00</p>
+      </div>
+      <div>
+        <img>
+        <p>DRESSES</p>
+        <h3>Checked Stretch Dress</h3>
+        <p>$129.00</p>
+      </div>
+    </div>  
     </section>
     <!--newsletter and email-->
-    <section class="newsletter">
+    <section class="newsletter" id="newsletter">
       <div>
         <span>Sign-up for</span> <span>Updates</span>
         <p>
@@ -170,6 +196,7 @@
       </ul>
     </footer>
     <script src="./jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>
