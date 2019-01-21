@@ -14,6 +14,7 @@ $(".main-carousel").flickity({
   prevNextButtons: false
 });
 
+//  smooth scrolling source @ https://css-tricks.com/snippets/jquery/smooth-scrolling/
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (
@@ -35,4 +36,3 @@ $(function() {
     }
   });
 });
-
