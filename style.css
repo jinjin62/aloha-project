@@ -352,6 +352,7 @@
     height: 800px;
     text-align: center;
     line-height: 400px;
+    flex-basis: 100%;
   }
 
   .products-border {
@@ -512,6 +513,7 @@
 
 /* tablet */
 @media all and (max-width: 1000px) {
+
 }
 
 /* mobile */
