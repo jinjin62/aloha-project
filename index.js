@@ -1,8 +1,14 @@
 $("form").on("click", "button", function(event) {
   event.preventDefault();
   alert("Thanks for subscribing");
-  $(".submit").val("");
+  // $(".submit").val("");
 });
+
+// / email validity checker source @https:/ / stackoverflow.com / a / 2507043;
+// function checkEmailValidity(email) {
+//   var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+//   return regex.test(email);
+// }
 
 $(".main-carousel").flickity({
   // options

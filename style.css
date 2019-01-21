@@ -91,6 +91,7 @@
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    box-sizing: border-box;
   }
   /* HTML5 display-role reset for older browsers */
   article,
@@ -148,7 +149,7 @@
   }
 
   @font-face {
-    font-family: "Raleway";
+    font-family: "Raleway medium";
     src: url("aloha-fonts/Raleway-Medium.eot");
     src: url("aloha-fonts/Raleway-Medium.eot?#iefix")
         format("embedded-opentype"),
@@ -175,7 +176,7 @@
   }
 
   @font-face {
-    font-family: "Raleway";
+    font-family: "Raleway light";
     src: url("aloha-fonts/Raleway-Light.eot");
     src: url("aloha-fonts/Raleway-Light.eot?#iefix") format("embedded-opentype"),
       url("aloha-fonts/Raleway-Light.woff2") format("woff2"),
@@ -229,7 +230,7 @@
   }
 
   @font-face {
-    font-family: "Playfair Display";
+    font-family: "Playfair Display regular";
     src: url("aloha-fonts/PlayfairDisplay-Regular.eot");
     src: url("aloha-fonts/PlayfairDisplay-Regular.eot?#iefix")
         format("embedded-opentype"),
@@ -242,11 +243,18 @@
     font-style: normal;
   }
 
-  body {
-    font-family: "raleway";
-    font-weight: 300;
+  /* body {
+    font-family: "Raleway";
     font-style: normal;
-  }
+    font-weight: 400;
+  } */
+
+  /* .banner {
+    font-family: "Playfair Display";
+    font-weight: 100;
+    font-style: normal;
+    font-size: 16px;
+  } */
 
   /* logo */
 
@@ -259,7 +267,7 @@
   /* shopping cart */
 
   .cart img {
-    max-width: 50px;
+    max-width: 60px;
     padding-right: 30%;
     align-self: flex-end;
   }
@@ -279,8 +287,11 @@
     height: 10%;
     min-width: 100%;
     z-index: 1;
-    font-family: "raleway";
-    font-weight: 400;
+    padding: 0 2%;
+    font-family: "Raleway light";
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold;
     font-size: 16px;
   }
 
@@ -317,7 +328,7 @@
     background-repeat: repeat-x, no-repeat, repeat-x;
     background-position-x: center, center, center;
     background-position-y: center, 40px, center;
-    height: 350px;
+    height: 550px;
     margin-top: 6%;
   }
 
@@ -326,10 +337,15 @@
     justify-content: center;
     align-items: center;
     flex-flow: column;
-    padding-top: 10em;
+    padding-top: 200px;
+    font-size: 25px;
+    font-weight: 10;
+    color: white;
+    text-shadow: 2px 2px 4px black;
   }
 
   h1 {
+    padding-top: 30px;
     font-size: 2em;
   }
 
@@ -340,7 +356,7 @@
     margin: 60px 20%;
   }
 
-  .about h2 {
+  .hand-crafted {
     display: flex;
     font-family: "Playfair Display";
     font-weight: normal;
@@ -348,7 +364,6 @@
     font-size: 28px;
     text-align: center;
     align-content: center;
-    flex-direction: column;
     justify-content: center;
     margin: 0;
     flex-grow: 2;
@@ -356,19 +371,32 @@
     width: 100%;
   }
 
+  .styles {
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  .about-text {
+    /* font-family: "Raleway Light"; */
+    font-size: 1.2rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    line-height: 45px;
+  }
+
   /* product blocks*/
 
   .products-block {
     display: flex;
     flex-wrap: wrap;
-    height: 800px;
+    height: 60vw;
     text-align: center;
-    line-height: 400px;
-    flex-basis: 100%;
+    line-height: 30px;
+    /* flex-basis: 100%; */
   }
 
   .products-border {
-    margin: -5px;
     border: 5px solid white;
   }
 
@@ -376,48 +404,70 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       url(images/mens-category.jpg);
     background-size: cover, cover;
-    flex: 2 0 50%;
+    flex: 1 0 50%;
+    max-width: 100%;
   }
 
   .trends-block {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       url(images/trends-category.jpg);
-    flex: 2 0 25%;
+    flex: 1 0 25%;
     background-size: cover, cover;
+    max-width: 50%;
   }
 
   .glasses-block {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       url(images/glasses-category.jpg);
-    flex: 2 0 25%;
+    flex: 1 0 25%;
     background-size: cover, cover;
+    max-width: 50%;
   }
 
   .sale-block {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       url(images/sale-category.jpg);
-    flex: 2 0 25%;
+    flex: 1 0 25%;
     background-size: cover, cover;
+    max-width: 50%;
   }
 
   .bags-block {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       url(images/bags-category.jpg);
-    flex: 2 0 25%;
+    flex: 1 0 25%;
     background-size: cover, cover;
+    max-width: 50%;
   }
 
   .womens-block {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       url(images/womens-category.jpg);
-    flex: 2 0 50%;
+    flex: 1 0 50%;
     background-size: cover, cover;
+    max-width: 100%;
   }
 
   /* featured carousel */
 
   .featured {
     margin-bottom: 200px;
+    padding-top: 30px;
+    text-align: center;
+  }
+
+  .product-type {
+    color: #969696;
+    line-height: 40px;
+  }
+
+  .product-name {
+    color: #e2574c;
+  }
+
+  .price {
+    color: #969696;
+    line-height: 40px;
   }
 
   /* newsletter and email */
@@ -431,8 +481,7 @@
       url(images/wave-bkgd.jpg);
     background-repeat: no-repeat, no-repeat;
     background-position: bottom, bottom;
-    background-size: cover, cover;
-    min-height: 300px;
+    min-height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -479,16 +528,17 @@
   footer ul {
     position: absolute;
     right: 60px;
+    align-self: flex-end;
   }
 
   footer li {
     margin-top: 15px;
   }
 
-  #contact-info {
+  .contact-info {
     display: flex;
     flex-flow: column;
-    align-self: center;
+    align-self: flex-start;
   }
 
   /* containers*/
@@ -525,6 +575,17 @@
 
 /* tablet */
 @media all and (max-width: 1000px) {
+  /* .mens-block.womens-block {
+    flex-basis: 50%;
+  } */
+
+  /* .products-block {
+    height: 400px;
+  } */
+
+  /* .mens-block.womens-block.trends-block.glasses-block.sale-block.bags-block {
+    height: 400px;
+  } */
 }
 
 /* mobile */
@@ -548,6 +609,7 @@
     border-top: 1px solid;
     border-top-color: #d7d7d7;
     align-items: center;
+    min-height: 30%;
   }
   .main-navi li {
     padding: 10px 10px;
@@ -560,6 +622,33 @@
     margin-top: 20%;
   }
 
+  .products-block {
+    height: 200vw;
+  }
+
+  .mens-block {
+    flex: 1 0 100%;
+  }
+
+  .trends-block {
+    flex: 1 0 50%;
+  }
+
+  .glasses-block {
+    flex: 1 0 50%;
+  }
+
+  .sale-block {
+    flex: 1 0 50%;
+  }
+
+  .bags-block {
+    flex: 1 0 50%;
+  }
+
+  .womens-block {
+    flex: 1 0 100%;
+  }
   .newsletter {
     display: flex;
     flex-direction: column;
