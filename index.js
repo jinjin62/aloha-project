@@ -1,9 +1,4 @@
-// $("form").on("click", "button", function(event) {
-//   event.preventDefault();
-//   alert("Thanks for subscribing");
-//   $(".submit").val("");
-// });
-
+// subscribe alert
 $(function() {$(".text-submit").on("click", ".submit", function() {
   const text = $("input[name='email_address']").val();
   if( checkEmailValidity(text)===true){
@@ -20,16 +15,6 @@ function checkEmailValidity(email) {
   return regex.test(email);
 }
 });
-
-// $(".text-submit").submit(function(event) {
-//   event.preventDefault();
-
-//   if ($(".text-submit").val() == "") {
-//     alert("Please enter a valid email");
-//   } else {
-//     alert("Thanks for Subscribing");
-//   }
-// });
 
 //  smooth scrolling source @ https://css-tricks.com/snippets/jquery/smooth-scrolling/
 $(function() {
@@ -54,6 +39,7 @@ $(function() {
   });
 });
 
+// carousel
 $(".main-carousel").flickity({
   // options
   cellAlign: "left",
