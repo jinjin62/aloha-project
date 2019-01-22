@@ -243,23 +243,14 @@
     font-style: normal;
   }
 
-  /* body {
-    font-family: "Raleway";
-    font-style: normal;
-    font-weight: 400;
-  } */
-
-  /* .banner {
-    font-family: "Playfair Display";
-    font-weight: 100;
-    font-style: normal;
-    font-size: 16px;
-  } */
+  body {
+    font-family: "Raleway light";
+  }
 
   /* logo */
 
   .logo img {
-    max-width: 130px;
+    max-width: 150px;
     padding: 10%;
     align-self: flex-start;
   }
@@ -304,14 +295,6 @@
   .nav-list li {
     padding: 1em;
   }
-
-  /* .main-navi li {
-    list-style: none;
-    display: inline;
-    text-transform: uppercase;
-    padding: 1em;
-    /* order: 1; to shift in down for mobile 
-  } */
 
   .nav-list li a {
     color: #e2574c;
@@ -361,7 +344,7 @@
     font-family: "Playfair Display";
     font-weight: normal;
     font-style: italic;
-    font-size: 28px;
+    font-size: 35px;
     text-align: center;
     align-content: center;
     justify-content: center;
@@ -377,7 +360,6 @@
   }
 
   .about-text {
-    /* font-family: "Raleway Light"; */
     font-size: 1.2rem;
     display: block;
     margin-block-start: 1em;
@@ -392,12 +374,17 @@
     flex-wrap: wrap;
     height: 60vw;
     text-align: center;
-    line-height: 30px;
-    /* flex-basis: 100%; */
+    line-height: 30vw;
   }
 
   .products-border {
     border: 5px solid white;
+  }
+
+  .block-fonts {
+    font-family: "Raleway medium";
+    font-size: 30px;
+    color: white;
   }
 
   .mens-block {
@@ -463,6 +450,7 @@
 
   .product-name {
     color: #e2574c;
+    font-size: 25px;
   }
 
   .price {
@@ -473,9 +461,7 @@
   /* newsletter and email */
 
   .newsletter {
-    font-family: "Playfair Display";
     font-weight: normal;
-    font-style: italic;
     text-align: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       url(images/wave-bkgd.jpg);
@@ -516,29 +502,50 @@
     background-color: #e2574c;
   }
 
+  .newsletter-text {
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    line-height: 40px;
+    padding-bottom: 20px;
+  }
+
   /* footer and social media */
 
-  footer {
+  .site-footer {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 10%;
     background-color: #242424;
     min-height: 200px;
-  }
-
-  footer ul {
-    position: absolute;
-    right: 60px;
-    align-self: flex-end;
-  }
-
-  footer li {
-    margin-top: 15px;
+    font-family: "Raleway medium";
   }
 
   .contact-info {
-    display: flex;
-    flex-flow: column;
-    align-self: flex-start;
+    text-decoration: none;
+    color: white;
+  }
+
+  .phone-email {
+    margin: 15px 0;
+  }
+
+  .phone-email a {
+    color: white;
+  }
+
+  .address {
+    color: #969696;
+  }
+
+  .site-footer ul li {
+    padding: 8px;
+    text-decoration: none;
+  }
+
+  .site-footer ul li a {
+    color: white;
   }
 
   /* containers*/
@@ -548,46 +555,18 @@
     min-width: 400px;
   }
 
-  .flex-container-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  /* .flex-container {
-  display: flex;
-  justify-content: space-between;
-} */
-
-  /* .flex-container-block {
-
-} */
-
-  a:link {
+  .site-footer {
     text-decoration: none;
   }
-
-  /* a: hover {
- 
-}  */
 }
 
-/* tablet */
-@media all and (max-width: 1000px) {
-  /* .mens-block.womens-block {
-    flex-basis: 50%;
-  } */
-
-  /* .products-block {
-    height: 400px;
-  } */
-
-  /* .mens-block.womens-block.trends-block.glasses-block.sale-block.bags-block {
-    height: 400px;
-  } */
+a:any-link {
+  text-decoration: none;
 }
 
+a:hover {
+  color: #b64036;
+}
 /* mobile */
 @media all and (max-width: 600px) {
   .site-header {
@@ -624,6 +603,7 @@
 
   .products-block {
     height: 200vw;
+    line-height: 50vw;
   }
 
   .mens-block {
@@ -649,6 +629,17 @@
   .womens-block {
     flex: 1 0 100%;
   }
+
+  .products-block {
+    height: 200vw;
+    white-space: nowrap;
+  }
+
+  .featured {
+    margin-top: 80px;
+    white-space: nowrap;
+  }
+
   .newsletter {
     display: flex;
     flex-direction: column;
@@ -658,5 +649,16 @@
   .site-footer {
     display: flex;
     flex-direction: column;
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  .site-footer ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .site-footer ul span {
+    display: none;
   }
 }

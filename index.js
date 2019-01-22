@@ -1,24 +1,35 @@
-$("form").on("click", "button", function(event) {
-  event.preventDefault();
-  alert("Thanks for subscribing");
-  // $(".submit").val("");
+// $("form").on("click", "button", function(event) {
+//   event.preventDefault();
+//   alert("Thanks for subscribing");
+//   $(".submit").val("");
+// });
+
+$(function() {$(".text-submit").on("click", ".submit", function() {
+  const text = $("input[name='email_address']").val();
+  if( checkEmailValidity(text)===true){
+      alert("Thank you for subscrıbıng!");
+  }else{
+      alert("Not a valid email address!");
+  }
+  $("input[name='email_address']").val()="";
 });
 
-// / email validity checker source @https:/ / stackoverflow.com / a / 2507043;
-// function checkEmailValidity(email) {
-//   var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-//   return regex.test(email);
-// }
-
-$(".main-carousel").flickity({
-  // options
-  cellAlign: "left",
-  contain: true,
-  percentPosition: false,
-  imagesLoaded: true,
-  autoPlay: true,
-  prevNextButtons: false
+// email validity checker source @https:/ / stackoverflow.com / a / 2507043;
+function checkEmailValidity(email) {
+  var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  return regex.test(email);
+}
 });
+
+// $(".text-submit").submit(function(event) {
+//   event.preventDefault();
+
+//   if ($(".text-submit").val() == "") {
+//     alert("Please enter a valid email");
+//   } else {
+//     alert("Thanks for Subscribing");
+//   }
+// });
 
 //  smooth scrolling source @ https://css-tricks.com/snippets/jquery/smooth-scrolling/
 $(function() {
@@ -41,4 +52,14 @@ $(function() {
       }
     }
   });
+});
+
+$(".main-carousel").flickity({
+  // options
+  cellAlign: "left",
+  contain: true,
+  percentPosition: false,
+  imagesLoaded: true,
+  autoPlay: true,
+  prevNextButtons: false
 });
