@@ -300,6 +300,10 @@
     color: #e2574c;
   }
 
+  .nav-list li a:hover {
+    color: #b64036;
+  }
+
   /* banner */
 
   .banner {
@@ -327,9 +331,14 @@
     text-shadow: 2px 2px 4px black;
   }
 
+  .collection {
+    font-family: "Raleway medium";
+  }
+
   h1 {
     padding-top: 30px;
-    font-size: 2em;
+    font-size: 2.5em;
+    font-family: "Playfair Display regular";
   }
 
   /* about */
@@ -565,6 +574,10 @@ a:any-link {
 }
 
 a:hover {
+  color: #b64036;
+}
+
+.site-footer ul li a:hover {
   color: #b64036;
 }
 /* mobile */
