@@ -21,6 +21,7 @@
   </head>
 
   <body>
+      <a class="screen-reader-text" href="#main">Skip to content</a>
     <header class="site-header">
       <!--top left logo-->
       <div class="logo">
@@ -51,8 +52,9 @@
     </section>
     <section class="about" id="about" >
     <h2 class="hand-crafted">
-      Hand-Crafted<p class="styles">&nbspStyles</p>
+      Hand-Crafted Styles
     </h2>  
+    <main id="main" class="site-main" tabindex="-1">
       <p class="about-text">
         Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse
         our current selection of products or sign-up for updates below
@@ -73,7 +75,7 @@
     <!--Carousel-->
     <section class="featured container" id="featured">
         <h2 class="hand-crafted">
-            Most-Loved&nbsp <p class="styles">Styles</p>
+            Most-Loved Styles
           </h2>
     <div class="main-carousel">
       <div>
@@ -84,7 +86,6 @@
         <p class="product-type">DRESSES</p>
         <h3 class="product-name">Checked Stretch Dress</h3>
         <p class="price">$129.00</p>
-        </p>
       </div>
       <div>
         <img
@@ -114,19 +115,19 @@
         <p class="price">$69.00</p>
       </div>
       <div>
-        <img src="images/cotton-yellow-tshirt.jpg">
+        <img src="images/cotton-yellow-tshirt.jpg" alt="Cotton Yellow tShirt">
         <p class="product-type">SHIRTS</p>
         <h3 class="product-name">Cotton Yellow tshirt</h3>
         <p class="price">$59.00</p>
       </div>
       <div>
-        <img src="images/stretch-knit-dress.jpg">
+        <img src="images/stretch-knit-dress.jpg" alt="Stretch Knit Dress">
         <p class="product-type">DRESSES</p>
         <h3 class="product-name">Stretch Knit Dress</h3>
         <p class="price">$79.00</p>
       </div>
       <div>
-        <img src="images/blue-silk-dress.jpg">
+        <img src="images/blue-silk-dress.jpg" alt="Blue Silk Dress">
         <p class="product-type">DRESSES</p>
         <h3 class="product-name">Blue Silk Dress</h3>
         <p class="price">$169.00</p>
@@ -137,7 +138,7 @@
     <section class="newsletter" id="newsletter">
       <div class="newsletter-text">
       <h2 class="hand-crafted">
-        Sign-up for&nbsp<p class="styles">Updates</p>
+        Sign-up for Updates
       </h2>
         <p class="update-text">
           Stay updated on our latest product releases, be the first to find out
@@ -156,6 +157,7 @@
         <button class="submit" type="submit">Subscribe</button>
       </form>
     </section>
+  </main>
     <!-- Footer -->
     <footer class="site-footer flex-container">
       <div class="contact-info">
@@ -172,24 +174,24 @@
       </div>
       <ul>
         <li>
-          <a href="#facebook"><i class="fab fa-facebook-f"></i><span>&nbspFacebook</span></a>
+          <a href="#facebook"><i class="fab fa-facebook-f"></i><span>&nbsp;Facebook</span></a>
         </li>
         <li>
-          <a href="#twitter"><i class="fab fa-twitter"></i><span>&nbspTwitter</span></a>
+          <a href="#twitter"><i class="fab fa-twitter"></i><span>&nbsp;Twitter</span></a>
         </li>
         <li>
           <a href="#instagram"
-            ><i class="fab fa-instagram"></i><span>&nbspInstagram</span></a
+            ><i class="fab fa-instagram"></i><span>&nbsp;Instagram</span></a
           >
         </li>
         <li>
           <a href="#pinterest"
-            ><i class="fab fa-pinterest"></i><span>&nbspPinterest</span></a
+            ><i class="fab fa-pinterest"></i><span>&nbsp;Pinterest</span></a
           >
         </li>
         <li>
           <a href="#google+"
-            ><i class="fab fa-google-plus-g"></i><span>&nbspGoogle+</span></a
+            ><i class="fab fa-google-plus-g"></i><span>&nbsp;Google+</span></a
           >
         </li>
       </ul>
@@ -197,5 +199,6 @@
     <script src="./jquery-3.3.1.min.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="./index.js"></script>
+    <script src="./tota11y.min.js"></script>
   </body>
 </html>
